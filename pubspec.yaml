@@ -1,0 +1,162 @@
+name: treasure_hunt_game
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.2.3 <4.0.0"
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  flutter_blue: ^0.8.0
+  flutter_blue_plus: ^1.31.10
+  get: ^4.6.6
+  permission_handler: ^11.2.0
+  dotted_border: ^2.1.0
+  bottom_drawer: ^0.0.5
+  qr_code_scanner: ^1.0.1
+  flutter_tts: ^3.8.5
+  bottom_sheet: ^4.0.0
+  awesome_ripple_animation: ^2.0.0
+  http: ^1.2.1
+  google_translator: ^1.0.0
+  audioplayers: ^6.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.9
+  flutter_launcher_icons: ^0.13.1
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/icons/playstore.png"
+
+flutter:
+  uses-material-design: true
+  assets:
+  # Image files  
+    - assets/images/background.png   
+    - assets/images/fail.png
+    - assets/images/failback.png
+    - assets/images/failtext.png
+    - assets/images/findme.png
+    - assets/images/level_images/level1.png
+    - assets/images/level_images/level2.png
+    - assets/images/level_images/level3.png
+    - assets/images/level_images/level4.png
+    - assets/images/level_images/level5.png
+    - assets/images/level_images/theme1.png
+    - assets/images/profile.png
+    - assets/images/puzzle_images/fruits/i1.png
+    - assets/images/puzzle_images/fruits/i2.png
+    - assets/images/puzzle_images/fruits/i3.png
+    - assets/images/puzzle_images/fruits/ip1.png
+    - assets/images/puzzle_images/fruits/ip2.png
+    - assets/images/puzzle_images/fruits/ip3.png 
+    - assets/images/puzzle_images/birds/b1.png
+    - assets/images/puzzle_images/birds/b2.png
+    - assets/images/puzzle_images/birds/b3.png
+    - assets/images/puzzle_images/birds/bp1.png
+    - assets/images/puzzle_images/birds/bp2.png
+    - assets/images/puzzle_images/birds/bp3.png 
+    - assets/images/puzzle_images/animal/a1.png
+    - assets/images/puzzle_images/animal/a2.png
+    - assets/images/puzzle_images/animal/a3.png
+    - assets/images/puzzle_images/animal/ap1.png
+    - assets/images/puzzle_images/animal/ap2.png
+    - assets/images/puzzle_images/animal/ap3.png 
+    - assets/images/puzzle_images/road/c1.png
+    - assets/images/puzzle_images/road/c2.png
+    - assets/images/puzzle_images/road/c3.png
+    - assets/images/puzzle_images/road/cp1.png
+    - assets/images/puzzle_images/road/cp2.png
+    - assets/images/puzzle_images/road/cp3.png
+    - assets/images/retray.png    
+    - assets/images/scan.png
+    - assets/images/selectplayer.png
+    - assets/images/splash.png
+    - assets/images/start.png
+    - assets/images/stop.png
+    - assets/images/toy1.png
+    - assets/images/toy2.png
+    - assets/images/c1.png
+    - assets/images/c2.png
+    - assets/images/toy3.png
+    - assets/images/toy4.png
+    - assets/images/img1.png
+    - assets/images/img2.png
+    - assets/images/trophy.png
+
+  # Audio files   
+    - assets/audio/congrats.wav
+    - assets/audio/drum.mp3
+    
+    - assets/audio/english/en-close.mp3
+    - assets/audio/english/en-code.mp3
+    - assets/audio/english/en-code2.mp3
+    - assets/audio/english/en-codeshare.mp3
+    - assets/audio/english/en-far.mp3
+    - assets/audio/english/en-lose.mp3
+    - assets/audio/english/en-puzzlewin.mp3
+    - assets/audio/english/en-win.mp3
+    - assets/audio/malayalam/ml-close.mp3
+    - assets/audio/malayalam/ml-close2.mp3
+    - assets/audio/malayalam/ml-code.mp3
+    - assets/audio/malayalam/ml-code2.mp3
+    - assets/audio/malayalam/ml-code3.mp3
+    - assets/audio/malayalam/ml-codeshare.mp3
+    - assets/audio/malayalam/ml-codeshare2.mp3
+    - assets/audio/malayalam/ml-far.mp3
+    - assets/audio/malayalam/ml-far2.mp3
+    - assets/audio/malayalam/ml-win.mp3
+    - assets/audio/malayalam/ml-win2.mp3
+    - assets/audio/malayalam/ml-win3.mp3
+    - assets/audio/malayalam/ml-win4.mp3
+
+  fonts:
+    - family: Flexo
+      fonts:
+        - asset: assets/fonts/Flexo-Regular.ttf
+        - asset: assets/fonts/Flexo-Bold.ttf
+          weight: 900
+
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
